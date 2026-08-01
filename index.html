@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Digital Samurai Productions</title>
+  <meta name="description" content="High-impact graphic design by Todd Hendrick. Cyberpunk precision. Samurai discipline." />
+  <link rel="icon" href="assets/images/logo.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Particle Canvas -->
+  <canvas id="particles"></canvas>
+
+  <!-- Custom Cursor Glow -->
+  <div class="cursor-glow" id="cursor-glow"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="#home" class="logo">
+        <img src="assets/images/logo.jpg" alt="Logo" class="logo-img" />
+        <span class="logo-text">Digital Samurai</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#services" class="nav-link" data-text="Services">Services</a>
+        <a href="#work" class="nav-link" data-text="Work">Work</a>
+        <a href="#about" class="nav-link" data-text="About">About</a>
+        <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
+      </nav>
+
+      <a href="tel:7143005814" class="cta-call">
+        <span>Call Now</span>
+      </a>
+
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-links">
+      <a href="#services" class="mobile-link">Services</a>
+      <a href="#work" class="mobile-link">Work</a>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+      <a href="tel:7143005814" class="mobile-call">Call (714) 300-5814</a>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-bg-wrap">
+      <img src="assets/images/hero-bg.jpg" alt="" class="hero-bg" />
+      <div class="hero-gradient"></div>
+    </div>
+
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow reveal">Orange County · Graphic Designer</p>
+        <h1 class="reveal">
+          <span class="line">The Digital</span>
+          <span class="line gradient">Samurai</span>
+        </h1>
+        <p class="tagline reveal">Precision design with cyberpunk intensity.<br>Logos, branding & digital art that cut through the noise.</p>
+        <div class="hero-btns reveal">
+          <a href="#work" class="btn btn-primary">
+            <span>View Work</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-ghost">Get a Quote</a>
+        </div>
+      </div>
+
+      <div class="hero-portrait reveal">
+        <div class="portrait-frame">
+          <img src="assets/images/portrait.jpg" alt="Todd Hendrick" class="portrait-img" />
+          <div class="portrait-ring"></div>
+          <div class="portrait-glow"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">What I Forge</p>
+        <h2>Services</h2>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <div class="card-icon">刀</div>
+          <h3>Logo & Brand Identity</h3>
+          <p>Complete systems that feel legendary — logos, color, type, guidelines.</p>
+          <div class="card-glow"></div>
+        </article>
+        <article class="service-card reveal">
+          <div class="card-icon">社</div>
+          <h3>Social & Marketing</h3>
+          <p>Scroll-stopping graphics and campaign assets built for engagement.</p>
+          <div class="card-glow"></div>
+        </article>
+        <article class="service-card reveal">
+          <div class="card-icon">絵</div>
+          <h3>Digital Illustration</h3>
+          <p>Custom concept art and high-impact digital pieces with edge.</p>
+          <div class="card-glow"></div>
+        </article>
+        <article class="service-card reveal">
+          <div class="card-icon">画</div>
+          <h3>Web & UI Graphics</h3>
+          <p>Icons, heroes, and interface elements that elevate digital products.</p>
+          <div class="card-glow"></div>
+        </article>
+        <article class="service-card reveal">
+          <div class="card-icon">印</div>
+          <h3>Print & Packaging</h3>
+          <p>Business cards, packaging, and physical pieces ready for production.</p>
+          <div class="card-glow"></div>
+        </article>
+        <article class="service-card featured reveal">
+          <div class="badge">Signature</div>
+          <div class="card-icon">全</div>
+          <h3>Full Brand Packages</h3>
+          <p>End-to-end identity systems for brands that want to launch strong.</p>
+          <div class="card-glow"></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="section dark" id="work">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Selected Work</p>
+        <h2>Portfolio</h2>
+      </div>
+
+      <div class="portfolio-grid">
+        <article class="portfolio-item large reveal">
+          <img src="assets/images/portfolio-1.jpg" alt="Brand Identity" />
+          <div class="portfolio-overlay">
+            <h3>Brand Identity Systems</h3>
+            <p>Full logo suites, mockups & digital applications</p>
+          </div>
+        </article>
+        <article class="portfolio-item reveal">
+          <img src="assets/images/portfolio-2.jpg" alt="Tech Branding" />
+          <div class="portfolio-overlay">
+            <h3>Tech Branding</h3>
+            <p>Logo, packaging & presence</p>
+          </div>
+        </article>
+        <article class="portfolio-item reveal">
+          <img src="assets/images/logo.jpg" alt="Primary Mark" />
+          <div class="portfolio-overlay">
+            <h3>Primary Mark</h3>
+            <p>Circuit Katana Logo</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="about-visual reveal">
+        <div class="about-frame">
+          <img src="assets/images/portrait.jpg" alt="Todd Hendrick" />
+          <div class="about-accent"></div>
+        </div>
+      </div>
+      <div class="about-content reveal">
+        <p class="eyebrow">The Designer</p>
+        <h2>Todd Hendrick</h2>
+        <p class="lead">Founder of The Digital Samurai Productions.</p>
+        <p>I design with the discipline of a craftsman and the intensity of the digital age. Clean lines. High contrast. Visuals that cut through the noise.</p>
+        <p>Based in Orange County, California. Serving clients locally and nationwide.</p>
+        <a href="#contact" class="btn btn-primary">Start a Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section dark" id="contact">
+    <div class="container">
+      <div class="contact-card reveal">
+        <p class="eyebrow">Ready?</p>
+        <h2>Let’s Create</h2>
+        <p>Fast responses. Clear process. Designs that hit hard.</p>
+        <a href="tel:7143005814" class="phone-link">(714) 300-5814</a>
+        <p class="location">Orange County, CA · Remote clients welcome</p>
+        <a href="https://www.thumbtack.com" target="_blank" rel="noopener" class="btn btn-ghost">Find me on Thumbtack</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/images/logo.jpg" alt="" />
+        <span>The Digital Samurai Productions</span>
+      </div>
+      <p>© 2026 Todd Hendrick</p>
+    </div>
+  </footer>
+
+  <!-- Sound Toggle -->
+  <button class="sound-toggle" id="sound-toggle" title="Toggle sound">
+    <span id="sound-icon">🔊</span>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
